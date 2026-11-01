@@ -19,6 +19,20 @@ const addTow = (a : number,b : number) : number => {
 console.log(addTow(200,501));
 
 
+//* Array and Tuple and readonly modifier
+
+// const arr : Array<string> = ["Programming", "Hero"]
+
+
+
+const array         : string   []              = ["Ahmad","Said"];
+const numArray      : number   []              = [23501,23];
+const dhakalatlLong : readonly [number,number] = [23.8103, 90.4125];
+
+
+
+
+
 
 
 
