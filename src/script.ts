@@ -1,4 +1,6 @@
 //* Basic types
+import './part-2/src/v1-module-config.js'
+
 
 let myString    : string    = "Ahmad Said";
 let myNumber    : number    = 23501;
@@ -28,6 +30,81 @@ console.log(addTow(200,501));
 const array         : string   []              = ["Ahmad","Said"];
 const numArray      : number   []              = [23501,23];
 const dhakalatlLong : readonly [number,number] = [23.8103, 90.4125];
+
+
+
+//* Optional Default and rest parameters (...args)
+
+const concatName = (firstName: string, lastName?: string) => {
+if (!lastName) {
+    return firstName;
+}
+return firstName + " " + lastName;
+};
+
+
+const greetings = (fullName: string, greeting = "Hello") => {
+console.log(greeting + " " + fullName);
+};
+
+greetings("Mir");
+
+//* rest parameters (...args)
+
+const sum = (...numbers: number[]) => {
+return numbers.reduce((total, sum) => total + sum, 0);
+};
+
+sum(1, 2, 3, 4, 5, 6);
+
+const logUserAction = (
+...args: [name: string, age: number, isActive: boolean]
+) => {
+const [name, age] = args;
+
+console.log(name + " is " + age);
+};
+
+logUserAction("Mir", 192, false);
+
+//* Object type, type alias and interface
+
+type Address = {
+streetName: string;
+holdingNumber: number;
+};
+
+type TUser = {
+name: string;
+age: number;
+isActive: boolean;
+action: () => void;
+badges: string[];
+address: Address;
+};
+
+interface IUser {
+name: string;
+age: number;
+isActive: boolean;
+action: () => void;
+badges: string[];
+}
+
+const user: TUser = {
+name: "Mir",
+age: 123,
+isActive: true,
+action: () => console.log("Hello"),
+badges: ["abc", "def"],
+address: {
+holdingNumber: 123,
+streetName: "ABC",
+},
+};
+
+// user.email = "mir@gmail.com";
+// console.log(user.address);
 
 
 
