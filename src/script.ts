@@ -3,6 +3,8 @@ import './part-2/src/v1-module-config.js'
 import './part-2/src/v2-union.js'
 import './part-2/src/v3-type-vs-interface.js'
 import './part-2/src/v5-special-types.js'
+import './part-2/src/v6-type-assertion.js'
+import './part-2/src/v7-narrowing.js'
 
 
 let myString    : string    = "Ahmad Said";
