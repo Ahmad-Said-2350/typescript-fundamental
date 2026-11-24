@@ -7,6 +7,7 @@ import './part-2/src/v6-type-assertion.js'
 import './part-2/src/v7-narrowing.js'
 import './part-2/src/v8-narrowing-cont.js'
 import './part-2/src/v9-generic.js'
+import './part-2/src/v10-promises.js'
 
 
 let myString    : string    = "Ahmad Said";
