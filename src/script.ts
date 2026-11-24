@@ -5,6 +5,8 @@ import './part-2/src/v3-type-vs-interface.js'
 import './part-2/src/v5-special-types.js'
 import './part-2/src/v6-type-assertion.js'
 import './part-2/src/v7-narrowing.js'
+import './part-2/src/v8-narrowing-cont.js'
+import './part-2/src/v9-generic.js'
 
 
 let myString    : string    = "Ahmad Said";
